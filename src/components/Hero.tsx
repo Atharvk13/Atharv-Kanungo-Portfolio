@@ -83,7 +83,7 @@ export const Hero: React.FC = () => {
           </button>
           
           <button
-            onClick={() => window.open('https://drive.google.com/file/d/1clITPR0ilW2pR6MsIpP3CcDDD9yQgC8R/view?usp=drive_link', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1clITPR0ilW2pR6MsIpP3CcDDD9yQgC8R/view?usp=sharing', '_blank')}
             className="px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-xl font-semibold transition-all flex items-center gap-2"
           >
             <Download className="w-4 h-4" />

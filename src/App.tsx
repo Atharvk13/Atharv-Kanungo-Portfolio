@@ -23,7 +23,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="bg-[#05050a] text-white selection:bg-blue-500/30 selection:text-blue-200">
+    <div className="text-white selection:bg-blue-500/30 selection:text-blue-200">
       <AnimatedBackground />
       <AnimatePresence mode="wait">
         {isLoading ? (

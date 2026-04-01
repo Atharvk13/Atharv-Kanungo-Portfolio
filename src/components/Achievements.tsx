@@ -40,15 +40,12 @@ export const Achievements: React.FC = () => {
                 <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20 mb-6 group-hover:scale-110 transition-transform">
                   <Icon className="text-blue-500 w-6 h-6" />
                 </div>
-
-                {ach.value && (
-                  <div className="text-3xl font-bold text-blue-400 mb-2 font-mono">
-                    {ach.value}
-                  </div>
-                )}
                 
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors h-16 flex items-start gap-2 flex-wrap">
                   {ach.title}
+                  {ach.value && (
+                    <span className="text-blue-400 font-mono">• {ach.value}</span>
+                  )}
                 </h3>
                 
                 <p className="text-gray-400 text-sm leading-relaxed">

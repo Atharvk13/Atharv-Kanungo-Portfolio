@@ -23,7 +23,8 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="min-h-screen bg-[#05050a] text-white selection:bg-blue-500/30 selection:text-blue-200">
+    <div className="bg-[#05050a] text-white selection:bg-blue-500/30 selection:text-blue-200">
+      <AnimatedBackground />
       <AnimatePresence mode="wait">
         {isLoading ? (
           <Splash key="splash" onComplete={() => setIsLoading(false)} />
@@ -33,9 +34,8 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="relative"
+            className="relative z-10"
           >
-            <AnimatedBackground />
             <Navbar />
             
             <div className="relative z-10">
